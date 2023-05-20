@@ -1,0 +1,77 @@
+/*minimum and maximum*/
+@media only screen and (min-width: 1400px) {
+    .top-content-video-height {
+        height: 243px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .top-content-video-height {
+        height: 209px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .top-content-video-height {
+        height: 173px;
+    }
+
+    .border-lg-start {
+        border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .top-content-video-height {
+        height: 372px;
+    }
+
+    .my-xs-3 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 576px ) and (max-width: 767px) {
+    .top-content-video-height {
+        height: 372px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .top-content-video-height {
+        height: 372px !important;
+    }
+}
+
+
+/*only minimum width*/
+@media only screen and (min-width: 1400px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+    .border-lg-start {
+        border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+
+    .border-lg-end {
+        border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 576px ) {
+
+}
+
+@media only screen and (max-width: 575px) {
+
+}

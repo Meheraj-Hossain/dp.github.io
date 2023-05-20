@@ -1,0 +1,47 @@
+:root {
+    --facebook-color :#0D8AF0 ;
+    --instagram-color: #9744AC;
+    --twitter-color: #1DA5F8;
+    --youtube-color: #FF0303;
+    --linkedin-color: #006CAE;
+}
+.d-n,
+.m-n {
+    z-index: 100;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(220, 53, 69);
+}
+
+.force-facebook-hover {
+    color: var(--facebook-color);
+}
+
+.force-instagram-hover {
+    color: var(--instagram-color);
+}
+
+.force-twitter-hover {
+    color: var(--twitter-color);
+}
+
+.force-youtube-hover {
+    color: var(--youtube-color);
+}
+
+.force-linkedin-hover {
+    color: var(--linkedin-color);
+}
+
+.force-facebook-hover:hover, .force-instagram-hover:hover, .force-twitter-hover:hover, .force-youtube-hover:hover, .force-linkedin-hover:hover {
+    color: var(--hover-color);
+}
+
+.active {
+    color: var(--site-color) !important;
+}

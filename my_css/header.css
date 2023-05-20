@@ -1,0 +1,18 @@
+:root {
+
+}
+
+.height-24 {
+    height: 24px;
+}
+
+.header-search-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: normal;
+}
+
+ a .force-hover:hover {
+    color: var(--hover-color) !important;
+}

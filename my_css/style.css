@@ -1,0 +1,108 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+:root {
+    --primary-color : black;
+    --p-and-small-color : #555555;
+    --site-color : #0573E6;
+    --hover-color : #0573E6;
+    --font-xs : 15px;
+    --font-sm : 19px;
+    --font-md : 23px;
+    --font-lg : 27px;
+    --font-xl : 31px;
+    --font-xxl : 35px;
+    --f-w-xs : 100;
+    --f-w-sm : 300;
+    --f-w-md : 400;
+    --f-w-lg : 700;
+    --f-w-xl : 800;
+    --f-w-xxl : 900;
+}
+
+@font-face {
+    font-family: noto;
+    src: url('../fonts/NotoSerifBengali-VariableFont_wdth,wght.ttf');
+}
+
+* {
+    font-family: noto, Arial, sans-serif;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+p,
+small {
+    color : var(--p-and-small-color);
+}
+
+.c-d:hover{
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+a:hover p,
+a:hover small {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+h3, h4, h5{
+    line-height: 1.4;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.font-xs {
+    font-size: var(--font-xs);
+}
+
+.font-sm {
+    font-size: var(--font-sm);
+}
+
+.font-md {
+    font-size: var(--font-md);
+}
+
+.f-w-xs {
+    font-weight: var(--f-w-xs);
+}
+
+.f-w-sm {
+    font-weight: var(--f-w-sm);
+}
+
+.f-w-md {
+    font-weight: var(--f-w-md);
+}
+
+.f-w-lg {
+    font-weight: var(--f-w-lg);
+}
+
+.f-w-xl {
+    font-weight: var(--f-w-xl);
+}
+
+.f-w-xxl {
+    font-weight: var(--f-w-xxl);
+}
+
+.c-d .image-container {
+    overflow: hidden;
+}
+
+.c-d .img-fluid {
+    transition: transform .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+}
+.c-d:hover .img-fluid {
+    /*overflow: hidden;*/
+    transform: scale(1.02);
+}
+
