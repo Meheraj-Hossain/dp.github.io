@@ -76,6 +76,10 @@ h3, h4, h5{
     font-size: var(--font-sm-1);
 }
 
+.font-sm-1 {
+    font-size: var(--font-sm-2);
+}
+
 .font-md {
     font-size: var(--font-md);
 }
