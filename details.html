@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Details</title>
+    <!--    style-->
+    <!--    bootstrap-->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <!--    bootstrap ends-->
+
+    <!--    fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-solid-900.ttf">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-solid-900.woff2">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-regular-400.woff2">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-regular-400.ttf">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-brands-400.ttf">
+    <link rel="font/tff" href="fontawesome/webfonts/fa-brands-400.woff2">
+    <!--    fontawesome ends-->
+
+    <!--    manual css-->
+    <link rel="stylesheet" href="my_css/style.css">
+    <link rel="stylesheet" href="my_css/media.css">
+    <link rel="stylesheet" href="my_css/header.css">
+    <link rel="stylesheet" href="my_css/navbar.css">
+    <link rel="stylesheet" href="my_css/index.css">
+    <link rel="stylesheet" href="my_css/details.css">
+    <!--manual css ends-->
+
+    <style>
+
+        #button {
+            display: inline-block;
+            background-color: #DC3545;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s, opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        #button::after {
+
+            content: "\f0aa";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.5em;
+            line-height: 40px;
+            color: #fff;
+
+        }
+
+        #button:hover {
+            background-color: #1D80E8;
+            cursor: pointer;
+        }
+
+
+    </style>
+    <!--    end style-->
+</head>
+<body>
+<!--top ad over logo-->
+<div class="container">
+    <!--    top desktop ad over logo -->
+    <div class="d-none d-sm-block my-3">
+        <div class="d-flex justify-content-center">
+            <a href="" target="_blank" rel="nofollow">
+                <img class="img-fluid"
+                     src="https://www.gourmetads.com/wp-content/uploads/2021/06/Barilla-970x90-Super-Leaderboard.jpg"
+                     alt="top desktop ad over logo"
+                     title="advertisement">
+            </a>
+        </div>
+    </div>
+    <!--    top desktop ad over logo ends -->
+
+    <!--    top mobile ad over logo-->
+    <div class="d-block d-sm-none my-3">
+        <div class="d-flex justify-content-center">
+            <a href="" target="_blank" rel="nofollow">
+                <img class="img-fluid"
+                     src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                     alt="top desktop ad over logo"
+                     title="advertisement">
+            </a>
+        </div>
+    </div>
+    <!--    top mobile ad over logo ends-->
+</div>
+<!--top ad over logo ends-->
+
+<!--  =>1200px  header  section-->
+<div class="container  d-none d-sm-none d-md-none d-lg-none d-xl-block">
+    <div class="row my-2 ">
+        <div class="col-md-12 d-flex flex-wrap justify-content-center align-items-center">
+            <div class="col-md-4 d-flex flex-wrap align-items-center">
+                <div class="col-md-12 my-2 d-flex">
+                    <div class="search-button">
+                        <form class="d-flex height-24" role="search">
+                            <input class="form-control me-2 font-xs" type="search"
+                                   placeholder="অনুসন্ধান করুন" aria-label="Search">
+                            <button class="header-search-button" type="submit"
+                            >
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-12 my-2">
+                        <span><i class="fas fa-location"></i><text class="mx-1 font-xs"
+                        >ঢাকা</text></span>
+                    <span><i class="fas fa-calendar-day"></i><text class="mx-1 font-xs">সোমবার, ০১ মে ২০২৩, ১৮ বৈশাখ ১৪৩০</text></span>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex flex-wrap justify-content-center align-items-center">
+                <a href="/" target="_blank" rel="nofollow">
+                    <img class="site-logo"
+                         src="image/logo1672518180.png"
+                         alt="ad"
+                         title="advertisement">
+                </a>
+            </div>
+            <div class="col-md-4 d-flex flex-wrap align-items-center">
+                <div class="col-md-12 my-2 d-flex flex-wrap justify-content-end">
+                    <a href="">
+                        <text class="force-hover text-danger text-bold">English</text>
+                    </a>
+                    <text> &nbsp; Edition</text>
+                </div>
+                <div class="col-md-12 my-2 d-flex flex-wrap justify-content-end">
+                    <a href=""><span class="mx-2 "><i class="fas fa-archive "></i><text
+                            class="force-hover ms-1 font-xs">আর্কাইভ</text></span></a>
+                    <a href=""><span class="mx-2"><i class="fas fa-photo-video"></i><text
+                            class="force-hover ms-1 font-xs">গ্যালারি</text></span></a>
+                    <a href=""><span class="ms-1"><i class="fa-solid fa-newspaper"></i><text
+                            class="force-hover ms-1 font-xs">ই-পেপার</text></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--    =>1200px logo section ends-->
+
+<!--<1200px header with navbar section-->
+<div class="m-n bg-light d-block d-sm-block d-md-block d-lg-block d-xl-none top-0 position-sticky border-bottom border-top border-1 border-light shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12 col-lg-12 d-flex">
+                <div class="col-md-7 col-7 col-sm-7 col-lg-7 d-flex flex-wrap justify-content-start align-items-center">
+                    <a href="" target="_blank" rel="nofollow">
+                        <img class="site-logo"
+                             src="image/logo1672518180.png"
+                             alt="ad"
+                             title="logo"
+                             width="200">
+                    </a>
+                </div>
+
+                <div class="col-md-5 col-5 col-sm-5 col-lg-5 d-flex flex-wrap align-items-center">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-12 my-2 d-flex flex-wrap justify-content-end">
+                        <button class="btn btn-outline-danger mx-2 text-bold">English
+                        </button>
+                        <!--                        <1200 navbar section-->
+                        <button class="border-1 btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbarLightM" aria-controls="offcanvasNavbarLightM"
+                                aria-label="Toggle navigation">
+                            <span class=""><i class="fa-solid fa-bars"></i></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLightM"
+                             aria-labelledby="offcanvasNavbarLightLabelM">
+                            <div class="offcanvas-header py-0">
+                                <a href="" target="_blank" rel="nofollow">
+                                    <img class="site-logo"
+                                         src="image/logo1672518180.png"
+                                         alt="ad"
+                                         title="logo"
+                                         width="250">
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-header pb-3 pt-0 px-4 font-md">
+                                <a href=""><i class="force-facebook-hover fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="force-instagram-hover fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="force-twitter-hover fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="force-youtube-hover fa-brands fa-youtube"></i></a>
+                                <a href=""><i class="force-linkedin-hover fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="offcanvas-header p-0 ms-4">
+                                <span><i class="fas fa-calendar-day"></i><text class="mx-1 font-xs">সোমবার, ০১ মে ২০২৩, ১৮ বৈশাখ ১৪৩০</text></span>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search"
+                                           aria-label="Search">
+                                    <button class="btn btn-outline-dark" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                                <ul class="navbar-nav text-bold justify-content-end flex-grow-1 pe-3 font-sm">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">
+                                            <text class="force-hover">প্রচ্ছদ</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">জাতীয়</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">আন্তর্জাতিক</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">রাজনীতি</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">অর্থনীতি</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">বাংলাদেশ</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">বিনোদন</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">বাণিজ্য</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">চাকরী</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">জীবনযাপন</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">মতামত</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                           data-bs-toggle="dropdown"
+                                           aria-expanded="false">
+                                            <text class="force-hover">খেলাধুলা</text>
+                                        </a>
+                                        <ul class="dropdown-menu font-sm">
+                                            <li><a class="dropdown-item text-bold" href="#">
+                                                <text class="force-hover">ক্রিকেট</text>
+                                            </a></li>
+                                            <li><a class="dropdown-item text-bold" href="#">
+                                                <text class="force-hover">ফুটবল</text>
+                                            </a></li>
+                                            <!--                                        <li>-->
+                                            <!--                                            <hr class="dropdown-divider">-->
+                                            <!--                                        </li>-->
+                                            <li><a class="dropdown-item text-bold" href="#">
+                                                <text class="force-hover">অন্যান্য</text>
+                                            </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">অপরাধ</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">ধর্ম</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">ক্যাম্পাস</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">কর্পোরেট</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">ইতিহাস</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">মোটিভেশন</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">ফিচার</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">কৃষি</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">আর্কাইভ</text>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item py-1">
+                                        <a class="nav-link p-0" href="#">
+                                            <text class="force-hover">পাঠকের কথা</text>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr>
+
+                            </div>
+                        </div>
+                        <!--                        <1200 navbar section ends-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<1200px header with navbar section ends-->
+
+<!-- =>1200px navbar section-->
+<div class="d-n nav-height bg-white top-0 position-sticky border-top border-bottom border-danger border-1 my-0 mx-0 d-none d-sm-none d-md-none d-lg-none d-xl-block shadow">
+    <div class="container ">
+        <div class="row">
+            <nav class="navbar py-0" aria-label="Light offcanvas navbar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav d-flex flex-row text-bold font-sm-1">
+                        <li class="nav-item">
+                            <a class="nav-link py-1 active" aria-current="page" href="#">
+                                <text>প্রচ্ছদ</text>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">জাতীয়</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">আন্তর্জাতিক</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">রাজনীতি</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">অর্থনীতি</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">বাংলাদেশ</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">বিনোদন</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">বাণিজ্য</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">চাকরী</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">জীবনযাপন</a>
+                        </li>
+                        <li class="nav-item ms-3 py-1">
+                            <a class="nav-link p-0" href="#">মতামত</a>
+                        </li>
+                        <li class="nav-item dropdown ms-3 py-1">
+                            <a class="nav-link p-0 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                খেলাধুলা
+                            </a>
+                            <ul class="dropdown-menu font-sm position-absolute"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-bold" href="">ক্রিকেট</a></li>
+                                <li><a class="dropdown-item text-bold" href="#">ফুটবল</a></li>
+                                <li><a class="dropdown-item text-bold" href="#">অন্যান্য</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button id="desktop-all-nav-button" class="navbar-toggler border-1 border-white" type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight"
+                         aria-labelledby="offcanvasNavbarLightLabel">
+                        <div class="offcanvas-header py-0">
+                            <a href="" target="_blank" rel="nofollow">
+                                <img class="site-logo"
+                                     src="image/logo1672518180.png"
+                                     alt="ad"
+                                     title="logo"
+                                     width="250">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-header pt-2 pb-2 px-4 border-bottom border-top-0  border-light-subtle border-1 shadow font-md">
+                            <a href=""><i class="force-facebook-hover fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="force-instagram-hover fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="force-twitter-hover fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="force-youtube-hover fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="force-linkedin-hover fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="offcanvas-body ">
+                            <ul class="navbar-nav text-bold justify-content-end flex-grow-1 pe-3 font-sm">
+                                <li class="nav-item py-1">
+                                    <a class="nav-link active p-0" aria-current="page" href="#">প্রচ্ছদ</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">জাতীয়</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">আন্তর্জাতিক</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">রাজনীতি</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">অর্থনীতি</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">বাংলাদেশ</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">বিনোদন</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">বাণিজ্য</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">চাকরী</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">জীবনযাপন</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">মতামত</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                       aria-expanded="false">
+                                        খেলাধুলা
+                                    </a>
+                                    <ul class="dropdown-menu font-sm">
+                                        <li><a class="dropdown-item text-bold" href="#">ক্রিকেট </a></li>
+                                        <li><a class="dropdown-item text-bold" href="#">ফুটবল </a></li>
+                                        <!--                                        <li>-->
+                                        <!--                                            <hr class="dropdown-divider">-->
+                                        <!--                                        </li>-->
+                                        <li><a class="dropdown-item text-bold" href="#">অন্যান্য </a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">অপরাধ</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">ধর্ম </a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">ক্যাম্পাস </a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">কর্পোরেট</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">ইতিহাস</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">মোটিভেশন </a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">ফিচার</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">কৃষি</a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">আর্কাইভ </a>
+                                </li>
+                                <li class="nav-item py-1">
+                                    <a class="nav-link p-0" href="#">পাঠকের কথা </a>
+                                </li>
+                            </ul>
+                            <!--                            <hr>-->
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--=>1200px navbar section ends-->
+<!--border section-->
+<div class="border-top border-1 border-danger"></div>
+<!--border section ends-->
+
+<main>
+    <!--first middle ad -->
+    <div class="container">
+        <!--    first middle desktop ad  -->
+        <div class="d-none d-sm-block my-3">
+            <div class="d-flex justify-content-center">
+                <a href="" target="_blank" rel="nofollow">
+                    <img class="img-fluid"
+                         src="https://www.gourmetads.com/wp-content/uploads/2021/06/Barilla-970x90-Super-Leaderboard.jpg"
+                         alt="first middle ad"
+                         title="advertisement">
+                </a>
+            </div>
+        </div>
+        <!--    first middle desktop ad  ends -->
+
+        <!--    first middle mobile ad -->
+        <div class="d-block d-sm-none my-3">
+            <div class="d-flex justify-content-center">
+                <a href="" target="_blank" rel="nofollow">
+                    <img class="img-fluid"
+                         src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                         alt="first middle ad"
+                         title="advertisement">
+                </a>
+            </div>
+        </div>
+        <!--    first middle mobile ad  ends-->
+    </div>
+    <!--first middle ad  ends-->
+
+    <div class="container">
+
+        <div class="row ">
+            <div class="container">
+                <div class="top-section border-top border-bottom">
+                    <div class="breadcrumb mb-0 ">
+                        <table class="table d-flex  table-borderless mb-0">
+                            <tbody>
+                            <tr class="d-flex">
+                                <th class="d-flex align-items-center">
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </th>
+                                <th class="d-flex align-items-center ">
+                                    <a href="" class="active">
+                                        সারাদেশ
+                                    </a>
+                                </th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sub-category">
+                        <table class="table d-flex table-borderless text-nowrap overflow-x-auto mb-0 ">
+                            <tbody>
+                            <tr class="d-flex">
+                                <th class="d-flex align-items-center"><a href="">চট্টগ্রাম</a></th>
+                                <th class="d-flex align-items-center"><a href="">বরিশাল</a></th>
+                                <th class="d-flex align-items-center"><a href="">খুলনা</a></th>
+                                <th class="d-flex align-items-center"><a href="">ময়মনসিংহ</a></th>
+                                <th class="d-flex align-items-center"><a href="">রাজশাহী</a></th>
+                                <th class="d-flex align-items-center"><a href="">রংপুর</a></th>
+                                <th class="d-flex align-items-center"><a href="">সিলেট</a></th>
+                                <th class="d-flex align-items-center"><a href="">ঢাকা</a></th>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" col-lg-9 col-12 pt-3">
+                <div class="news-details">
+                    <div class="headline">
+                        <h3 class="f-w-lg">
+                            যুক্তরাজ্যের প্রধানমন্ত্রী ঋষি সুনাকের ‘অনুপ্রেরণা’ শেখ হাসিনা
+                        </h3>
+                    </div>
+                    <div class="author-name">
+                        <i class="fa-solid fa-minus"></i>
+                        <div class="name">
+                            <h5>
+                                প্রতিনিধি, নওগাঁ
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="updated-at">
+                        <h5>আপডেট: ২৫ মে ২০২৩, ১৬: ২০</h5>
+                    </div>
+                    <div class="content">
+                        <div class="big-image py-3 border-top border-bottom">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/pm-hasina-20230506141920.jpg"
+                                 alt="" class="" style="width: 100%">
+                            <div class="big-image-caption mt-3">
+                                <i class="m-0">এশিয়া মিডিয়া সামিটে বক্তব্য দেন তথ্যমন্ত্রী হাছান মাহমুদ</i>
+                            </div>
+                        </div>
+                        <div class="description col-lg-8 offset-lg-2 col-12 py-3 border-bottom">
+                            <p>
+                                যুক্তরাজ্যের (ইউকে) প্রধানমন্ত্রী ঋষি সুনাক বাংলাদেশের প্রধানমন্ত্রী শেখ হাসিনাকে একজন
+                                সফল অর্থনৈতিক নেতা হিসেবে অভিহিত করে বলেছেন, ‘আপনি আমাদের জন্য অনুপ্রেরণা।’
+                            </p>
+
+                            <p>
+                                সুনাক বলেন, ‘আমি আপনাকে অনেক বছর ধরে অনুসরণ করছি। আপনি একজন সফল অর্থনৈতিক নেতা।’
+                            </p>
+
+                            <p>
+                                শুক্রবার (৫ মে) (স্থানীয় সময়) কমনওয়েলথ সেক্রেটারিয়েটের দ্বিপাক্ষিক সভা কক্ষে তাদের প্রথম
+                                দ্বিপাক্ষিক বৈঠকে সুনাককে উদ্ধৃত করে যুক্তরাজ্যে বাংলাদেশের হাইকমিশনার সাইদা মুনা তাসনিম
+                                এ কথা বলেন।
+                            </p>
+
+                            <!--first middle ad -->
+                            <div class="container">
+
+                                <!--    first middle mobile ad -->
+                                <div class="my-3">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="" target="_blank" rel="nofollow">
+                                            <img class="img-fluid"
+                                                 src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                                                 alt="first middle ad"
+                                                 title="advertisement">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--    first middle mobile ad  ends-->
+                            </div>
+                            <!--first middle ad  ends-->
+
+                            <p>
+                                তাসনিম বলেন, যুক্তরাজ্যের প্রধানমন্ত্রী বলেছেন, তার দুই মেয়ে এবং স্ত্রী তার (শেখ হাসিনা)
+                                বড় ভক্ত। তিনি গত অক্টোবরে দায়িত্ব নেওয়ার পর থেকে তার কন্যারা শেখ হাসিনার মতো মহান নেতা
+                                হবেন এই কামনা করেছেন।
+                            </p>
+
+                            <P>
+                                সুনাক বলেন, ‘আপনি আমার দুই মেয়ের জন্য মহান অনুপ্রেরণা।’
+                            </P>
+
+                            <div class="container inside-news-container">
+                                <div class="read-more-news">
+                                    <h5>
+                                        প্রধানমন্ত্রী নিয়ে আরও পড়ুন
+                                    </h5>
+                                </div>
+                                <div class="container news-container ">
+                                    <a href="" class="d-flex">
+                                        <img src="https://www.dhakaprokash24.com/media/content/images/2023May/XS/0-20230525185001.jpg"
+                                             alt="" class="img-fluid">
+                                        <h5>
+                                            রাসিক নির্বাচন: ৭ কাউন্সিলর প্রার্থীর মনোনয়ন বাতিল
+                                        </h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <P>
+                                ব্রিটিশ প্রধানমন্ত্রী বাংলাদেশের সমৃদ্ধির জন্য শেখ হাসিনার নেতৃত্বের ভূয়সী প্রশংসা করেন
+                                এবং পাশাপাশি রোহিঙ্গাদের আশ্রয়
+                                , ভূমিহীন ও গৃহহীন বাংলাদেশের জনগণকে সরকারি খরচে বাড়ি দেওয়া, জলবায়ু পরিবর্তনসহ বিভিন্ন
+                                আন্তর্জাতিক ফোরামে
+                                তার গৌরবময় ভূমিকার ভূয়সী প্রশংসা করেন।
+                            </P>
+
+                            <!--first middle ad -->
+                            <div class="container">
+
+                                <!--    first middle mobile ad -->
+                                <div class="my-3">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="" target="_blank" rel="nofollow">
+                                            <img class="img-fluid"
+                                                 src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                                                 alt="first middle ad"
+                                                 title="advertisement">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--    first middle mobile ad  ends-->
+                            </div>
+                            <!--first middle ad  ends-->
+
+                            <p>
+                                কভিড-১৯ মহামারি পরবর্তী সময়ে ছয় শতাংশের বেশি অর্থনৈতিক প্রবৃদ্ধি বজায় রাখার কথা উল্লেখ
+                                করে সুনাক বলেন, ‘বাংলাদেশের অর্থনৈতিক অগ্রগতি উল্লেখযোগ্য।’
+                            </p>
+
+                            <p>
+                                তিনি বাংলাদেশের প্রধানমন্ত্রীকে উন্নয়নের ‘রোল মডেল’ হিসেবে বর্ণনা করেন।
+
+                                প্রায় ৩৫ মিনিট স্থায়ী বৈঠকে দুই নেতা উভয় দেশের পারস্পরিক সুবিধা সংক্রান্ত বিভিন্ন বিষয়
+                                নিয়ে আলোচনা করেন।
+                            </p>
+
+                            <div class="container inside-news-container">
+                                <div class="read-more-news">
+                                    <h5>
+                                        প্রধানমন্ত্রী নিয়ে আরও পড়ুন
+                                    </h5>
+                                </div>
+                                <div class="container news-container ">
+                                    <a href="" class="d-flex">
+                                        <img src="https://www.dhakaprokash24.com/media/content/images/2023May/XS/0-20230525185001.jpg"
+                                             alt="" class="img-fluid">
+                                        <h5>
+                                            রাসিক নির্বাচন: ৭ কাউন্সিলর প্রার্থীর মনোনয়ন বাতিল
+                                        </h5>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p>
+                                ‘৫০ বছরেরও বেশি সময় ধরে আমাদের চমৎকার সম্পর্ক বিদ্যমান’ এ কথা উল্লেখ করে সুনাক বলেন,
+                                যুক্তরাজ্য বাংলাদেশের সঙ্গে সম্পর্ককে মূল্য দেয়।
+                            </p>
+
+                            <!--first middle ad -->
+                            <div class="container">
+
+                                <!--    first middle mobile ad -->
+                                <div class="my-3">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="" target="_blank" rel="nofollow">
+                                            <img class="img-fluid"
+                                                 src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                                                 alt="first middle ad"
+                                                 title="advertisement">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--    first middle mobile ad  ends-->
+                            </div>
+                            <!--first middle ad  ends-->
+
+                            <p>
+                                বৈঠকের শুরুতে শেখ হাসিনা যুক্তরাজ্যের প্রধানমন্ত্রী হওয়ায় ঋষি সুনাককে অভিনন্দন জানান।
+
+                                শেখ হাসিনা বলেন, ‘এশীয় ঐতিহ্য থেকে আপনি এত অল্প বয়সে প্রধানমন্ত্রী হয়েছেন। এমন তরুণ
+                                নেতৃত্ব দেখে আমার ভালো লাগছে।’
+                            </p>
+
+                            <div class="editor-tag">
+                                <h5>
+                                    <i>ঢাকা-প্রকাশ/এসজি</i>
+                                </h5>
+                            </div>
+
+                        </div>
+
+                        <div class="tags col-lg-8 offset-lg-2 col-12 py-3">
+                            <a href="">
+                                <h5>
+                                    <span class="text-danger">সারাদেশ </span>থেকে আরও পড়ুন
+                                </h5>
+                            </a>
+                            <div class="tag">
+                                <button class="btn btn-outline-secondary">
+                                    রাজনীতি
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    জাতীয় নির্বাচন
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    নির্বাচন
+                                </button>
+                                <button class="btn btn-outline-secondary">
+                                    রাজনীতি
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-12 pt-3">
+
+                <!--second middle ad -->
+                <div class="ad">
+                    <!--    second middle mobile ad -->
+                    <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" rel="nofollow">
+                            <img class="img-fluid"
+                                 src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                                 alt="first middle ad"
+                                 title="advertisement">
+                        </a>
+                    </div>
+                    <!--    second middle mobile ad  ends-->
+
+                    <mnl-border-my></mnl-border-my>
+                </div>
+                <!--second middle ad  ends-->
+
+                <!--second middle ad -->
+                <div class="ad">
+                    <!--    second middle mobile ad -->
+                    <div class="d-flex justify-content-center">
+                        <a href="" target="_blank" rel="nofollow">
+                            <img class="img-fluid"
+                                 src="https://lauragottfried.com/images/Digital-Banner-Ads-Cube-Fluke.jpg"
+                                 alt="first middle ad"
+                                 title="advertisement">
+                        </a>
+                    </div>
+                    <!--    second middle mobile ad  ends-->
+
+                    <mnl-border-my></mnl-border-my>
+                </div>
+                <!--second middle ad  ends-->
+
+                <div class="related-news">
+                    <div class="related-news-top">
+                        <h5>
+                            সারাদেশ থেকে আরও পড়ুন
+                        </h5>
+                    </div>
+                    <div class="content">
+                            <a href="" class="headline-then-image">
+                                <div class="col-8 headline-container">
+                                    <h5>
+                                        পরাজয় মেনে নিয়েছি: আজমত উল্লাহ
+                                    </h5>
+                                </div>
+
+                                <div class="col-4 image-container" style="background-color: white">
+                                    <div class="image-box">
+                                        <img src="https://www.dhakaprokash24.com/media/content/images/2023May/SM/0-20230526163037.jpg"
+                                             alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="content">
+                        <a href="" class="headline-then-image d-flex">
+                            <div class="col-8 headline-container">
+                                <h5>
+                                    পরাজয় মেনে নিয়েছি: আজমত উল্লাহ
+                                </h5>
+                            </div>
+
+                            <div class="col-4 image-container">
+                                <div class="image-box">
+                                    <img src="https://www.dhakaprokash24.com/media/content/images/2023May/SM/0-20230526163037.jpg"
+                                         alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="" class="headline-then-image d-flex">
+                            <div class="col-8 headline-container">
+                                <h5>
+                                    পরাজয় মেনে নিয়েছি: আজমত উল্লাহ
+                                </h5>
+                            </div>
+
+                            <div class="col-4 image-container">
+                                <div class="image-box">
+                                    <img src="https://www.dhakaprokash24.com/media/content/images/2023May/SM/0-20230526163037.jpg"
+                                         alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="" class="headline-then-image d-flex">
+                            <div class="col-8 headline-container">
+                                <h5>
+                                    পরাজয় মেনে নিয়েছি: আজমত উল্লাহ
+                                </h5>
+                            </div>
+
+                            <div class="col-4 image-container">
+                                <div class="image-box">
+                                    <img src="https://www.dhakaprokash24.com/media/content/images/2023May/SM/0-20230526163037.jpg"
+                                         alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <mnl-border-my></mnl-border-my>
+    </div>
+
+    <div class="container pt-3">
+        <div class="more-news">
+            <h5>
+                আরও পড়ুন
+            </h5>
+        </div>
+
+        <div class="m-news my-3">
+            <div class="row">
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/kader-sm-20230525172457.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                নির্বাচনে বাধা দিলে প্রতিহত করা হবে: কাদের
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/2-20230526013505.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                গাজীপুরে জায়েদা খাতুনের বাজিমাত
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/mayor-20230526013703.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                গাজীপুরে মেয়র পদে বেসরকারিভাবে নির্বাচিত জায়েদা
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/ecalamgir-20230525200937.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                গাজীপুরে শান্তিপূর্ণ ভোট নিয়ে সন্তুষ্ট ইসি
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/bangladesh-economic-20230525164030.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ৫০ বছরে পাচার ১২ লাখ কোটি টাকা: বাংলাদেশ অর্থনীতি সমিতি
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/2-20230525162920.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                গাসিক নির্বাচন: ভোটগ্রহণ শেষ, চলছে গণনা
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/amir-khasru-20230525155841.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ভিসা নিষেধাজ্ঞা সংক্রান্ত মার্কিন বিবৃতিকে স্বাগত বিএনপির
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/0-20230525165604.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ৫ দিনের রিমান্ডে বিএনপি নেতা চাঁদ
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/0-20230525151819.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                নির্বাচনে বাধা দিলে আইনানুগ ব্যবস্থা: পরিকল্পনামন্ত্রী
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/5-20230525111101.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ভোট দিয়ে যা বললেন জায়েদা খাতুন ও আজমত উল্লা
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/2-20230525103328.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ঢাকায় বসে সিসি ক্যামেরায় গাজীপুরের ভোট দেখছে ইসি
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/ecalamgir-20230525200937.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                গাজীপুরে শান্তিপূর্ণ ভোট নিয়ে সন্তুষ্ট ইসি
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/1-20230525180928.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                যুক্তরাষ্ট্রের ভিসানীতি নিয়ে পররাষ্ট্রমন্ত্রী ও পিটার হাসের বৈঠক
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/১-20230525104614.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ভোটের অধিকারকে সরকার রাষ্ট্রীয় পবিত্রতা মনে করে: পররাষ্ট্র মন্ত্রণালয়
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                        <div class="image-container">
+                            <img src="https://www.dhakaprokash24.com/media/content/images/2023May/biman-bandar-20230519005059.jpg"
+                                 alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <h5>
+                                ৩ বছর বন্ধ শাহজালালের কনকোর্স হল, দুর্ভোগে যাত্রী ও স্বজনরা
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="description-beneath-image col-lg-3 col-6 d-flex mb-3">
+                    <a href="" class="card overflow-hidden">
+                       <div class="image-container">
+                           <img src="https://www.dhakaprokash24.com/media/content/images/2023May/rohinga-20230505214209.jpg"
+                                alt="" class="img-fluid">
+                       </div>
+                        <div class="card-body">
+                            <h5>
+                                রোহিঙ্গা প্রত্যাবাসন: টানেলের শেষ প্রান্তে আলো দেখা যাচ্ছে?
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<a id="button"></a>
+
+<footer class="py-3" style="background-color: #E4E4E4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-12 my-3 d-flex flex-wrap ">
+                <div class="logo ">
+                    <img src="https://www.dhakaprokash24.com/media/common/logo_footer.png" alt="" class="img-fluid"
+                         style="width: 210px">
+                </div>
+                <div class="address mt-3 d-flex align-items-center" style="font-size: 17px">
+                    ৯৩, কাজী নজরুল ইসলাম এভিনিউ, (ষষ্ঠ তলা) <br>
+                    কারওয়ান বাজার, ঢাকা-১২১৫।
+                </div>
+
+
+            </div>
+            <div class="col-lg-6 col-12 my-3">
+                <div class="row footer-link ">
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> গোপনীয়তার নীতি
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> ব্যবহারের শর্তাবলি
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> আমাদের সম্পর্কে
+                    </div>
+                </div>
+                <div class="row footer-link my-3">
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> যোগাযোগ
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> আর্কাইভ
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-start">
+                        <i class="fa-solid fa-square me-2 mt-1"></i> কনভার্টার
+                    </div>
+                </div>
+                <div class="my-3 border-top"></div>
+
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <text><i class="fa-solid fa-square me-2 mt-1"></i> অনুসরণ করুন</text>
+                    </div>
+
+
+                    <div class="col-lg-3"><a href="" class="d-flex align-items-center"><i
+                            class="force-facebook-hover fa-brands fa-facebook me-2" style="font-size: 25px"></i>Facebook</a>
+                    </div>
+                    <div class="col-lg-3"><a href="" class="d-flex align-items-center"><i
+                            class="force-twitter-hover fa-brands fa-twitter me-2"
+                            style="font-size: 25px"></i>Twitter</a>
+                    </div>
+                    <div class="col-lg-3"><a href="" class="d-flex align-items-center"><i
+                            class="force-youtube-hover fa-brands fa-youtube me-2"
+                            style="font-size: 25px"></i>Youtube</a>
+                    </div>
+                    <div class="col-lg-3"><a href="" class="d-flex align-items-center"><i
+                            class="force-linkedin-hover fa-brands fa-linkedin me-2" style="font-size: 25px"></i>Linkedin</a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 col-12 my-3">
+                <div class="info">
+                    <div class="editor-section ">
+                        <text>
+                            <div class="identity text-bold" style="font-size: 17px; color: #378FEB">প্রধান সম্পাদক ও
+                                প্রকাশক :
+                            </div>
+                            <div class="text-bold">মোস্তফা কামাল</div>
+                            <div class="">
+                                editor@dhakaprokash24.com
+                            </div>
+                        </text>
+                    </div>
+
+                    <div class="newsroom-section my-3">
+                        <text>
+                            <div class="identity text-bold" style="font-size: 17px; color: #378FEB">নিউজরুম :
+                            </div>
+                            <div class="text-bold">+৮৮০ ৯৬১ ৩৩৩ ১০১০</div>
+                            <div class="">
+                                newsroom@dhakaprokash24.com
+                            </div>
+
+                        </text>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--            <div class="my-3"></div>-->
+
+        <div class="col-lg-12 d-flex justify-content-center align-items-center text-bg-dark py-1">
+            © ২০২৩ সর্বস্বত্ব সংরক্ষিত | ঢাকাপ্রকাশ
+        </div>
+
+    </div>
+</footer>
+<!--script-->
+<script src="fontawesome/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--script ends-->
+</body>
+</html>

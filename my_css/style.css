@@ -143,6 +143,7 @@ mnl-margin-py-1 {
 
 .description-beneath-image .img-fluid,
 .image-then-description .img-fluid,
+.headline-then-image .img-fluid,
 .opinion .lead-category-content .author-image .circleBase img,
 .opinion .other-contents .content .author-image .circleBase img
 {
@@ -152,6 +153,7 @@ mnl-margin-py-1 {
 
 .description-beneath-image:hover .img-fluid,
 .image-then-description:hover .img-fluid,
+.headline-then-image:hover .img-fluid,
 .opinion .lead-category-content:hover .author-image .circleBase img,
 .opinion .other-contents .content:hover .author-image .circleBase img
 {
@@ -212,6 +214,11 @@ mnl-margin-py-1 {
 .category .ad-or-content h5 {
     margin-bottom: 0;
 }
+
+/*.image-box {*/
+/*    overflow: hidden;*/
+/*    height: 95%;*/
+/*}*/
 
 
 

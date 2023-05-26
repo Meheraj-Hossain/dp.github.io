@@ -1,0 +1,145 @@
+.breadcrumb th {
+    padding-right: .25rem;
+    padding-left: .25rem;
+}
+
+.breadcrumb th:first-child,
+.sub-category th:first-child {
+    padding-left: 0;
+}
+
+.breadcrumb th:not(:last-child) ::after {
+    content: "\f054";
+    font-family: FontAwesome;
+    color: var(--site-color);
+    margin-left: .5rem;
+    font-size: 12px;
+}
+
+.sub-category th {
+    /*padding-top: 0 !important;*/
+    /*padding-bottom: 0 !important;*/
+    padding-right: .25rem;
+    padding-left: .25rem;
+}
+
+.sub-category th:not(:last-child)::after {
+    content: "\f111";
+    font-family: FontAwesome;
+    color: var(--site-color);
+    margin-left: .5rem;
+    font-size: 5px;
+}
+
+.news-details .author-name .fa-minus {
+    font-size: 35px;
+    color: var(--site-color);
+}
+
+.news-details .author-name .name h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.news-details .updated-at h5 {
+    color: var(--p-and-small-color);
+    font-size: 1rem;
+}
+
+.description p {
+    font-size: var(--font-sm-2);
+    color: black;
+}
+
+.description .inside-news-container {
+    padding-bottom: var(--padding-bottom-1);
+}
+
+.description .inside-news-container .news-container {
+    border: 1px solid var(--global-border-color);
+    padding-top: var(--padding-top-1);
+    padding-bottom: var(--padding-bottom-1);
+}
+
+.description .inside-news-container .read-more-news  h5 {
+    color: var(--p-and-small-color);
+}
+
+.description .inside-news-container .news-container h5 {
+    color: black;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.description .inside-news-container .news-container:hover h5 {
+    color: var(--site-color);
+}
+
+.description .editor-tag h5 {
+    font-size: 1rem;
+    color: var(--p-and-small-color);
+    margin-bottom: 0;
+}
+
+.tags a h5 span {
+    color: #DC3545;
+    text-decoration: underline dotted;
+    font-weight: var(--f-w-lg);
+}
+
+.tags a:hover h5{
+    color: black;
+}
+
+.tags a:hover h5 span {
+    color: var(--site-color) !important;
+}
+
+.more-news,
+.related-news .related-news-top
+{
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+.more-news h5,
+.related-news .related-news-top h5 {
+    font-size: 1.15rem;
+    font-weight: var(--f-w-lg);
+    color: #DC3545;
+}
+
+.m-news h5 {
+    font-weight: var(--f-w-md);
+}
+
+.related-news {
+    position: sticky;
+    top: 50px;
+}
+
+.related-news .content h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.m-news .description-beneath-image .image-container img {
+    height: 101%;
+}
+
+.related-news .content:not(:nth-last-child(1)) {
+    padding-top: var(--padding-top-1);
+    padding-bottom: var(--padding-bottom-1);
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+.related-news .content:nth-last-child(1) {
+    padding-top: var(--padding-top-1);
+}
+
+.related-news .headline-then-image {
+    display: flex;
+}
+
+.related-news .headline-then-image .headline-container {
+    padding-right: .25rem !important;
+}
