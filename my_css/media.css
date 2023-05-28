@@ -253,6 +253,10 @@
     .opinion .lead-category-content .author-image .circleBase {
         height: 176.75px;
     }
+
+    .description .inside-news-container .news-container h5 {
+        font-size: 1.15rem;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -296,6 +300,10 @@
 
     .opinion .lead-category-content .author-image .circleBase {
         height: 136.75px;
+    }
+
+    .description .inside-news-container .news-container h5 {
+        font-size: 1.15rem;
     }
 }
 
@@ -357,6 +365,8 @@
      .entertainment .other-contents .content .image-then-description-for-all .image-container {
          height: 100%;
      }
+
+
 }
 
 @media only screen and (max-width: 575px) {
