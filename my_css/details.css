@@ -49,6 +49,7 @@
 .description p {
     font-size: var(--font-sm-2);
     color: black;
+    font-weight: var(--f-w-sm);
 }
 
 .description .inside-news-container {
@@ -67,7 +68,7 @@
 
 .description .inside-news-container .news-container h5 {
     color: black;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 1rem;
 }
 
@@ -110,6 +111,7 @@
 
 .m-news h5 {
     font-weight: var(--f-w-md);
+    font-size: 1.15rem;
 }
 
 .related-news {
@@ -119,7 +121,8 @@
 
 .related-news .content h5 {
     font-size: 1.15rem;
-    font-weight: 600;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
 .m-news .description-beneath-image .image-container img {

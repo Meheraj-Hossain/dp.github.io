@@ -56,9 +56,8 @@
     /*    height: 90px;*/
     /*}*/
 
-    .image-box {
-        overflow: hidden;
-        height: 95%;
+    .content-one .image-container {
+        /*width: 281px;*/
     }
 }
 
@@ -167,7 +166,8 @@
         height: 165.75px;
     }
 
-    .related-news {
+    .related-news,
+    .other-category{
         top: 21px !important;
     }
 
@@ -381,3 +381,14 @@
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 991px) {
+    .content-one .description-container {
+        margin-top: var(--margin-top-1);
+    }
+
+    .content-one .description-container {
+        padding-left: 0;
+    }
+}
+

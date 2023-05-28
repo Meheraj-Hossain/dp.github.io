@@ -1,0 +1,97 @@
+.breadcrumb th {
+    padding-right: .25rem;
+    padding-left: .25rem;
+}
+
+.breadcrumb th:first-child,
+.sub-category th:first-child {
+    padding-left: 0;
+}
+
+.breadcrumb th:not(:last-child) ::after {
+    content: "\f054";
+    font-family: FontAwesome;
+    color: var(--site-color);
+    margin-left: .5rem;
+    font-size: 12px;
+}
+
+.sub-category th {
+    /*padding-top: 0 !important;*/
+    /*padding-bottom: 0 !important;*/
+    padding-right: .25rem;
+    padding-left: .25rem;
+}
+
+.sub-category th:not(:last-child)::after {
+    content: "\f111";
+    font-family: FontAwesome;
+    color: var(--site-color);
+    margin-left: .5rem;
+    font-size: 5px;
+}
+
+.category-contents .content:nth-child(1) {
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: var(--padding-bottom-1);
+}
+
+.category-contents .content:not(:nth-child(1)) {
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: var(--padding-bottom-1);
+    padding-top: var(--padding-top-1);
+}
+
+.category-contents .content h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+.category-contents .content .description-then-image {
+    display: flex;
+    margin-top: var(--margin-top-1);
+}
+
+.category-contents .content .description-then-image .image-container img {
+    width: 101%;
+}
+
+.other-category .other-category-top
+{
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+.other-category .other-category-top h5 {
+    font-size: 1.15rem;
+    font-weight: var(--f-w-lg);
+    color: #DC3545;
+}
+
+.other-category {
+    position: sticky;
+    top: 50px;
+}
+
+.other-category .content h5 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.other-category .content:not(:nth-last-child(1)) {
+    padding-top: var(--padding-top-1);
+    padding-bottom: var(--padding-bottom-1);
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+.other-category .content:nth-last-child(1) {
+    padding-top: var(--padding-top-1);
+}
+
+.other-category .headline-then-image {
+    display: flex;
+}
+
+.other-category .headline-then-image .headline-container {
+    padding-right: .25rem !important;
+}
