@@ -204,10 +204,6 @@
         padding-top: 1rem;
     }
 
-    .ad-or-content .description-beneath-image .description-container {
-        margin-top: 0 !important;
-        padding-left: 1rem;
-    }
 
     .other-contents .content .image-then-description-for-all .image-container, .emigration .category-contents .other-contents .content .image-then-description-for-all .image-container {
         height: 130px;
@@ -241,10 +237,7 @@
         padding-top: 1rem;
     }
 
-    .ad-or-content .description-beneath-image .description-container {
-        margin-top: 0 !important;
-        padding-left: 1rem;
-    }
+
 
     .other-contents .content .image-then-description-for-all .image-container, .emigration .category-contents .other-contents .content .image-then-description-for-all .image-container {
         height: 96px;
@@ -285,10 +278,7 @@
         padding-top: 1rem;
     }
 
-    .ad-or-content .description-beneath-image .description-container {
-        margin-top: 0 !important;
-        padding-left: 1rem;
-    }
+
 
     .other-contents .content .image-then-description-for-all .image-container {
         height: 76px;
@@ -382,13 +372,16 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
-    .content-one .description-container {
-        margin-top: var(--margin-top-1);
+
+
+@media only screen and (min-width: 992px) {
+    .description-then-image {
+        display: flex;
+        flex-direction: row;
     }
 
-    .content-one .description-container {
-        padding-left: 0;
+    .description-then-image .description-container {
+        padding-right: var(--padding-left-1);
     }
 }
 

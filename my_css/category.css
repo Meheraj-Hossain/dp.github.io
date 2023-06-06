@@ -43,7 +43,7 @@
 }
 
 .category-contents .content h5 {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 .category-contents .content .description-then-image {
@@ -93,5 +93,5 @@
 }
 
 .other-category .headline-then-image .headline-container {
-    padding-right: .25rem !important;
+    padding-right: .5rem !important;
 }

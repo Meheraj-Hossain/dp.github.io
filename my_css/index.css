@@ -71,80 +71,27 @@ a:hover span {
 }
 
 
-.tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--global-border-color);
-}
 
-.tab .active {
-    border-bottom: 3px solid #DC3545;
-    padding-bottom: 6px;
-}
 
-.tab h5 {
-    width: 50%;
-    margin-bottom: 0;
-    font-weight: var(--f-w-lg);
 
-}
 
-.tab .category-name {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-}
 
-.tab .category-name:hover {
-    color: var(--site-color);
-    cursor: pointer;
-}
 
-.tab-content ul {
-    list-style: none;
-    padding-left: 0;
-}
 
-.tab-content ul li {
-    margin-bottom: var(--margin-bottom-1);
-    border-bottom: 1px solid var(--global-border-color);
-}
 
-.tab-content ul li h5 {
-    display: flex;
-}
 
-serial {
-    font-size: var(--font-md);
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
-    font-weight: var(--f-w-xxl);
-    margin-right: .5rem;
 
-}
 
-.tab-content btn-more {
-    display: flex;
-    justify-content: center;
-}
 
-.btn-more-news {
-    --bs-btn-color: #0573E6;
-    --bs-btn-border-color: #0573E6;
-    --bs-btn-hover-color: #ffffff;
-    --bs-btn-hover-bg: #0573E6;
-    --bs-btn-hover-border-color: #0573E6;
-    --bs-btn-focus-shadow-rgb: 13, 202, 240;
-    --bs-btn-active-color: #ffffff;
-    --bs-btn-active-bg: #0573E6;
-    --bs-btn-active-border-color: #0573E6;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #0573E6;
-    --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #0573E6;
-    --bs-gradient: none;
-}
+
+
+
+
+
+
+
+
+
 
 /*.category th{*/
 /*    display: flex;*/
@@ -192,6 +139,7 @@ serial {
 .category .only-headline h5 {
     padding-bottom: 0;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .special-reports {
@@ -210,16 +158,18 @@ serial {
     overflow: hidden;
 }
 
-.opinion .other-contents .content .author-image .circleBase {
-    width: 85px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-}
+
 
 .opinion .lead-category-content:hover .author-image .circleBase {
     border: 3px solid var(--site-color);
 }
+
+/*.opinion .other-contents .content .author-image .circleBase {*/
+/*    width: 85px;*/
+/*    height: 90px;*/
+/*    border-radius: 50%;*/
+/*    overflow: hidden;*/
+/*}*/
 
 
 .opinion .lead-category-content .author-image .circleBase img,
@@ -291,3 +241,8 @@ serial {
     font-size: 1.5rem;
     display: inline-block;
 }
+
+/*.latest-popular .tab-content h5 {*/
+/*    margin-bottom: 0;*/
+/*    font-weight: 400;*/
+/*}*/
