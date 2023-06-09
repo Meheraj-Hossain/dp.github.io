@@ -84,7 +84,7 @@ h3, h4, h5 {
 }
 
 .font-sm-1 {
-    font-size: var(--font-sm-2);
+    font-size: var(--font-sm-2) !important;
 }
 
 .font-md {
@@ -178,7 +178,7 @@ mnl-margin-py-1 {
 }
 
 .description-beneath-image .description-container {
-    margin-top: var(--margin-top-1) !important;
+    margin-top: var(--half) !important;
 }
 
 .description-container h5 {
@@ -229,9 +229,9 @@ mnl-margin-py-1 {
 }
 
 
-.content-one .image-container img {
-    height: 101%;
-}
+/*.content-one .image-container img {*/
+/*    height: 101%;*/
+/*}*/
 
 .content-one .description-container {
     padding-left: var(--padding-left-1);

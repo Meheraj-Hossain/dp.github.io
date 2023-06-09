@@ -7,7 +7,7 @@
 }
 .d-n,
 .m-n {
-    z-index: 100;
+    z-index: 2;
 }
 
 .navbar-toggler:focus {

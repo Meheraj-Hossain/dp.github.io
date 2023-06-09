@@ -182,6 +182,18 @@
 
 @media only screen and (max-width: 991px) {
 
+    /*special-section*/
+
+    .special-section .article-contents .content:nth-child(odd) {
+        padding-right: var(--half);
+    }
+
+    .special-section .article-contents .content:nth-child(even) {
+        padding-left: var(--half);
+    }
+
+    /*special-section-ends*/
+
     /*top lead content*/
     .top-lead .lead-content {
         padding-bottom: var(--full);
@@ -194,7 +206,7 @@
 
     .top-lead .lead-content .description-beneath-image .description-container {
         order: 2;
-        margin-top: var(--full) !important;
+        margin-top: var(--half) !important;
     }
 
     .top-lead .lead-video,
@@ -266,7 +278,7 @@
 
     .sports .lead-category-content .description-beneath-image .description-container {
         order: 2;
-        margin-top: var(--full) !important;
+        margin-top: var(--half) !important;
     }
 
     /*sports-category*/
@@ -352,6 +364,15 @@
     }
     /*life-style-&-health-&-education-&-art-culture-categories-end*/
 
+    /*top-button*/
+
+    #button {
+        bottom: 0 !important;
+        right: 0 !important;
+    }
+
+    /*top-button-ends*/
+
 
     .content-one .description-container {
         margin-top: var(--margin-top-1);
@@ -368,7 +389,7 @@
 
     .description-then-image .description-container {
         order: 2;
-        margin-top: var(--margin-top-1);
+        margin-top: var(--half);
     }
 
     .description-then-image .image-container {
@@ -389,18 +410,45 @@
 }
 
 @media only screen and (min-width: 1400px) {
+
+    .lead-special-section-video iframe {
+        height: 355px;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .lead-special-section-video iframe {
+        height: 303px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .lead-special-section-video iframe {
+        height: 255px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .lead-special-section-video iframe {
+        height: 384px;
+    }
+
 }
 
 @media only screen and (min-width: 576px ) and (max-width: 767px) {
+
+    .lead-special-section-video iframe {
+        height: 289px;
+    }
+}
+
+@media only screen and (max-width: 575px ) {
+    .lead-special-section-video iframe {
+        height: 303px;
+    }
 }
 
 /*lead-container+advertisement*/
@@ -435,7 +483,7 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    font-size: var(--font-sm-1);
+    font-size: calc(var(--full) + var(--quarter));
 }
 
 .tab h5 {
@@ -526,7 +574,11 @@ serial {
 }
 
 .description-beneath-image-for-all .description-container {
-    margin-top: var(--full);
+    margin-top: var(--half);
+}
+
+.card .card-body {
+    padding: var(--half) !important;
 }
 
 .card .description-container {
@@ -786,3 +838,216 @@ serial {
 }
 
 /*life-style-&-health-&-education-&-art-culture-categories-end*/
+
+/*gallery-category*/
+
+.image-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 1px solid #f5f3f3;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+    opacity: 1;
+    top: 0;
+}
+
+.img-title-small {
+    position: absolute;
+    bottom: 1%;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: var(--f-w-md);
+}
+
+.image-icon {
+
+    position: absolute;
+    height: 30px;
+    display: flex;
+    width: 30px;
+    background-color: var(--site-color);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    left: 5px;
+    top: 5px;
+
+}
+
+.image-icon .fa-images {
+    color: white !important;
+}
+
+a:hover .overlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 1) 100%);
+}
+
+a:hover .img-title-small {
+    color: var(--second-site-color);
+}
+
+/*gallery-category-ends*/
+
+/*footer-advertisement*/
+
+.footer-advertisement {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    background-color: white;
+}
+
+.ad-close-btn {
+    display: block !important;
+    background-color: var(--second-site-color);
+    border: none;
+    height: 12px;
+    width: 55px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    left: calc(50% - 28px);
+    top: -12px;
+    /*box-shadow: 0 -1px 1px 0 rgb(0 0 0 / 20%);*/
+    border-radius: 12px 12px 0 0;
+}
+
+/*footer-advertisement-ends*/
+
+/*breaking-news-category*/
+
+.breaking-news {
+    padding-top: var(--full);
+    padding-bottom: var(--full);
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    z-index: 3;
+    /*background-color: #316B83;*/
+    background-color: var(--second-site-color);
+    min-height: 25%;
+}
+
+.breaking-news .category-name-btn-more {
+    padding-top: 0;
+    padding-bottom: 1rem;
+    /*border-top: 1px solid var(--global-border-color);*/
+    height: auto !important;
+}
+
+
+.breaking-news .category-name a {
+    font-size: 2rem;
+    cursor: context-menu;
+    color: white;
+}
+
+.breaking-news .category-name a:hover {
+    color: white;
+}
+
+.breaking-news .btn-more h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+
+.breaking-news .btn-more h2:hover {
+    color: black;
+}
+
+.breaking-news .content {
+    /*background-color: white;*/
+}
+ .breaking-news .content h3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 0;
+ }
+
+ .breaking-news .content:not(:first-child) h3 {
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ .breaking-news .content:last-child h3 {
+     margin-bottom: 0;
+ }
+
+.breaking-news .content h3 a {
+    color: white;
+}
+
+.breaking-news .content h3 a:hover {
+    color: black;
+}
+
+/*breaking-news-category-ends*/
+
+/*top-button*/
+
+#button {
+    display: inline-block;
+    background-color: var(--second-site-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#button::after {
+
+    content: "\f0aa";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 40px;
+    color: #fff;
+
+}
+
+#button:hover {
+    background-color: var(--site-color);
+    cursor: pointer;
+}
+
+/*top-button-ends*/
