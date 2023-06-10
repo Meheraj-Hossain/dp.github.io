@@ -49,7 +49,7 @@
 .description p {
     font-size: var(--font-sm-2);
     color: black;
-    font-weight: var(--f-w-xs);
+    font-weight: 400;
 }
 
 .description .inside-news-container {
@@ -84,7 +84,7 @@
 
 .tags a h5 span {
     color: #DC3545;
-    text-decoration: underline dotted;
+    /*text-decoration: underline dotted;*/
     font-weight: var(--f-w-lg);
 }
 
@@ -111,7 +111,6 @@
 
 .m-news h5 {
     font-weight: var(--f-w-md);
-    font-size: 1.15rem;
 }
 
 .related-news {
