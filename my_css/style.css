@@ -45,6 +45,10 @@
     font-family: noto, Arial, sans-serif;
 }
 
+h5{
+    font-size: calc(var(--full) + var(--quarter));
+}
+
 a {
     color: var(--primary-color);
     text-decoration: none;
