@@ -8,7 +8,7 @@
     --hover-color: #0573E6;
     --global-border-color: #dee2e6;
     --font-xs: 1rem;
-    --font-sm-1: 1.15rem;
+    --font-sm-1: 17px;
     --font-sm-2: 19px;
     --font-md: 23px;
     --font-lg: 27px;
@@ -43,10 +43,6 @@
 
 * {
     font-family: noto, Arial, sans-serif;
-}
-
-h5{
-    font-size: calc(var(--full) + var(--quarter));
 }
 
 a {
@@ -158,6 +154,7 @@ mnl-margin-py-1 {
 
 .image {
     overflow: hidden;
+    position: relative;
 }
 
 .image .img-fluid {

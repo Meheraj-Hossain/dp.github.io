@@ -405,6 +405,15 @@
     .lead-special-section-video iframe {
         height: 356px;
     }
+
+    .lead-video iframe {
+        height: 244.917px !important;
+    }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        height: calc(100% - 244.917px - 24.5px );
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -412,12 +421,35 @@
     .lead-special-section-video iframe {
         height: 303px;
     }
+
+    .lead-video iframe {
+        height: 209.817px !important;
+    }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        height: calc(100% - 209.817px - 24.5px );
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     .lead-special-section-video iframe {
         height: 255px;
+    }
+
+    .lead-video iframe {
+        height: 174.717px !important;
+    }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        height: calc(100% - 174.717px - 24.5px );
+    }
+
+    .video-icon {
+        left: 37%;
+        bottom: 28%;
     }
 }
 
@@ -427,6 +459,16 @@
         height: 384px;
     }
 
+    .lead-video iframe {
+        height: 361.917px !important;
+    }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        padding-bottom: var(--full);
+        border-bottom: 1px solid var(--global-border-color);
+    }
+
 }
 
 @media only screen and (min-width: 576px ) and (max-width: 767px) {
@@ -434,23 +476,30 @@
     .lead-special-section-video iframe {
         height: 289px;
     }
+
+    .lead-video iframe {
+        height: 268.317px !important;
+    }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        padding-bottom: var(--full);
+        border-bottom: 1px solid var(--global-border-color);
+    }
+
 }
 
 @media only screen and (max-width: 575px ) {
     .lead-special-section-video iframe {
         height: 303px;
     }
+
+    .next-lead-videos {
+        padding-top: var(--full);
+        padding-bottom: var(--full);
+        border-bottom: 1px solid var(--global-border-color);
+    }
 }
-
-/*lead-container+advertisement*/
-
-.lead-container {
-    padding-top: var(--full);
-    padding-bottom: var(--full);
-    border-bottom: 1px solid var(--global-border-color);
-}
-
-/*lead-container+advertisement ends*/
 
 
 
