@@ -1,35 +1,4 @@
-.breadcrumb th {
-    padding-right: .25rem;
-    padding-left: .25rem;
-}
 
-.breadcrumb th:first-child,
-.sub-category th:first-child {
-    padding-left: 0;
-}
-
-.breadcrumb th:not(:last-child) ::after {
-    content: "\f054";
-    font-family: FontAwesome;
-    color: var(--site-color);
-    margin-left: .5rem;
-    font-size: 12px;
-}
-
-.sub-category th {
-    /*padding-top: 0 !important;*/
-    /*padding-bottom: 0 !important;*/
-    padding-right: .25rem;
-    padding-left: .25rem;
-}
-
-.sub-category th:not(:last-child)::after {
-    content: "\f111";
-    font-family: FontAwesome;
-    color: var(--site-color);
-    margin-left: .5rem;
-    font-size: 5px;
-}
 
 /*global*/
 

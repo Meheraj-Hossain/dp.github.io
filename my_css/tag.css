@@ -1,0 +1,55 @@
+.tag {
+    padding: var(--full) 0;
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+.tag h2::before {
+    content : "\f02b";
+    font-family: FontAwesome;
+}
+
+.tag h2 {
+    margin-bottom: 0;
+    font-weight: var(--f-w-lg);
+}
+
+/*global*/
+
+.description-beneath-image-for-all {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-beneath-image-for-all .description-container, .c-description-beneath-image .description-container {
+    padding-top: var(--half);
+}
+
+.c-advertisement {
+    padding-top: var(--full);
+    padding-bottom: var(--full);
+    border-bottom: 1px solid var(--global-border-color);
+}
+
+/*global-ends*/
+
+.tag-contents .content {
+    border-bottom: 1px solid var(--global-border-color);
+    padding-bottom: var(--padding-bottom-1);
+    padding-top: var(--padding-top-1);
+}
+
+.tag-contents .content h5, .top-category-content h5 {
+    font-weight: 600;
+}
+
+.tag-contents .content .description-then-image {
+    display: flex;
+    margin-top: var(--margin-top-1);
+}
+
+.tag-contents .content .description-then-image .image-container img {
+    width: 100%;
+}
+
+
+
