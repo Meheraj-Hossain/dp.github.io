@@ -207,7 +207,8 @@ mnl-margin-py-1 {
 .special-articles .lead-category-content .author-image .circleBase img,
 .special-articles .other-contents .content .author-image .circleBase img,
 .c-description-beneath-image .image-container img,
-.tag-contents .content img {
+.tag-contents .content img,
+.archive-contents .content img{
     transition: transform 5ms ease-in-out;
     -webkit-transition: 5ms ease-in-out;
 }
@@ -221,7 +222,8 @@ mnl-margin-py-1 {
 .special-articles .lead-category-content:hover .author-image .circleBase img,
 .special-articles .other-contents .content:hover .author-image .circleBase img,
 .c-description-beneath-image:hover .image-container img,
-.tag-contents .content:hover img {
+.tag-contents .content:hover img,
+.archive-contents .content:hover img {
     transform: scale(1.03);
 }
 

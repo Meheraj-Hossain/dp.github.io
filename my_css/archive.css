@@ -1,3 +1,7 @@
+.select2-container .select2-selection--single {
+    height: 31px !important;
+}
+
 .select2-dropdown--below {
     z-index: 1 !important;
 }
@@ -12,14 +16,13 @@
 }
 
 .archive-search .input-group, .archive-search .input-group input, .archive-search .input-group button {
-    height: 28px;
+    height: 31px;
 
 }
 
 .archive-search .input-group label{
     display: flex;
-    height: 28px;
-    padding-top: .20rem;
+    height: 31px;
     cursor: context-menu;
     z-index: 1;
 }
@@ -42,7 +45,7 @@
 }
 
 .archive-search a {
-    height: 28px;
+    height: 31px;
     display: flex;
     align-items: center;
     font-size: var(--full);
